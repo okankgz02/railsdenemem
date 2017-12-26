@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uygulama</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<style type="text/css">
+header {background-color:#C09;}
+header h1{color:#00C; float:right;}
+div#sayfa{width:100%; height:250px; background:#C66;}
+footer{background-color:#C9F; height:90px; clear:both;}
+</style>
+<body>
+
+
+<%=render 'shared/navbar' %>
+<%= yield %>
+
+<footer>
+<p>Copyright 2017 OKAN AKGÖZ| Tüm haklar saklıdır.</p>
+</footer>
+</body>
+</html> 
